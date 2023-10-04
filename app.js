@@ -29,10 +29,6 @@ mongoose
   .then((conect) => {
     console.log("Connected to DB!");
 
-    app.listen(PORT, function () {
-      console.log("Server started on port " + PORT);
-    });
-
     // Item Schema & Model
     const itemSchema = {
       name: {
@@ -161,3 +157,7 @@ mongoose
         });
     });
   });
+
+app.listen(PORT, function () {
+  console.log("Server started on port " + PORT);
+});
